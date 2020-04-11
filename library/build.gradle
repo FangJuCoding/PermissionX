@@ -1,6 +1,25 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.novoda:bintray-release:0.9.1'
+    }
+}
+publish {
+    userOrg = "fangjucoding"
+    groupId = 'com.permissionx.fangjucoding'
+    artifactId = 'permissionx'
+    publishVersion = '1.0.1'
+    desc = 'Make Android runtime permission request esay.'
+    website = 'https://github.com/FangJuCoding/PermissionX'
+}
 
 android {
     compileSdkVersion 29
