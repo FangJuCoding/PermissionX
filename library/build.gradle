@@ -14,9 +14,9 @@ buildscript {
 }
 publish {
     userOrg = "fangjucoding"
-    groupId = 'com.permissionx.fangjucoding'
+    groupId = 'cn.funcoding.permissionx'
     artifactId = 'permissionx'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     desc = 'Make Android runtime permission request esay.'
     website = 'https://github.com/FangJuCoding/PermissionX'
 }
